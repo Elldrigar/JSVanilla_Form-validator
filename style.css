@@ -1,3 +1,8 @@
+:root {
+    --color-success: #2ecc71;
+    --color-error: #e74c3c;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -57,13 +62,13 @@ body {
 }
 
 .form-control.success input {
-    border-color: #2ecc71;
+    border-color: var(--color-success);
 }
 
 .form-control.error input {
-    border-color: #e74c3c;
+    border-color: var(--color-error);
 }
 
 .form-control small {
-    color: #e74c3c;
+    color: var(--color-error);
 }
