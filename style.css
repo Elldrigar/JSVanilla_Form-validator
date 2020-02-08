@@ -6,8 +6,9 @@
     --color-background-container: #ddd;
     --color-text: #777;
     --color-text-btn: #fff;
-    --color-text-input: #bbb;
+    --color-text-input: #888;
     --color-text-heading: #666;
+    --color-text-input-active: #000;
 }
 
 * {
@@ -65,6 +66,13 @@ body {
     border: 2px solid var(--color-border);
     color: var(--color-text-input);
     font-size: 16px;
+    font-weight: 100;
+}
+
+.form-control__input:active,
+.form-control__input:focus {
+    color: var(--color-text-input-active);
+    font-weight: 400;
 }
 
 .form-control input:focus {
