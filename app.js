@@ -26,6 +26,9 @@ form.addEventListener('submit', function (e) {
     } else {
         showSuccess(username);
     }
-
-    console.log('submit');
+    if (email.value === '') {
+        showError(email, 'Email is required!');
+    } else {
+        showSuccess(email);
+    }
 });
