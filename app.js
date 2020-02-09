@@ -29,6 +29,16 @@ function checkEmail(input) {
     }
 };
 
+//CHECK PASSWORD MATCH
+
+function checkPassMatch(input1, input2) {
+    if (input1.value !== input2.value) {
+        showError(input2, 'Passwords do not match!');
+    } else {
+        showSuccess(input)
+    }
+}
+
 //CHECK REQUIRED FIELDS
 function checkRequired(inputArr) {
     inputArr.forEach(function (input) {
@@ -63,4 +73,5 @@ form.addEventListener('submit', function (e) {
     checkLenght(username, 3, 15);
     checkLenght(password, 6, 20);
     checkEmail(email);
+    checkPassMatch(password, password2);
 });
